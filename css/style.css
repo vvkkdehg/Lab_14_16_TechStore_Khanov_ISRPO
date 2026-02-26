@@ -675,3 +675,103 @@ header button:hover {
         font-size: 1.3rem;
     }
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 5px;
+    margin-top: 60px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.footer-section .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.footer-section .contact-icon {
+    font-size: 1.2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: #5b5a5a;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.social-links a:hover {
+    background-color: #667eea;
+    color: white;
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 40px 0;
+    }
+    
+    footer .container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .footer-section .contact-item {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
