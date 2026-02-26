@@ -55,3 +55,137 @@
     margin: 40px 0;
 }
 
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.badge.new {
+    right: auto;
+    left: 15px;
+    background-color: #17a2b8;
+}
+
+.product-image {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 15px 15px 5px;
+    color: #333;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0 15px 15px;
+    line-height: 1.4;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 15px 10px;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1rem;
+}
+
+.count {
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.price {
+    margin: 0 15px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.old {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.current {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+.btn {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    margin: 0 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 30px);
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: #5a67d8;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: auto;
+    min-width: auto;
+}
+
+.btn-outline:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 30px;
+}
