@@ -554,3 +554,124 @@ header button:hover {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav-list a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    .products-grid,
+    .popular-grid,
+    .team-grid,
+    .advantages-grid,
+    .features-grid,
+    .stats-grid,
+    .stats-mini-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .container h2 {
+        padding-top: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .product-card h3 {
+        font-size: 1rem;
+    }
+    
+    .description {
+        font-size: 0.85rem;
+    }
+    
+    .current {
+        font-size: 1.1rem;
+    }
+    
+    .badge {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+    
+    .product-image {
+        font-size: 3rem;
+        padding: 20px 0;
+    }
+    
+    .feature-card,
+    .advantage-card,
+    .team-card,
+    .stat-card,
+    .stat-mini-item {
+        padding: 20px 15px;
+    }
+    
+    .feature-icon,
+    .advantage-icon {
+        font-size: 2.5rem;
+    }
+    
+    .stat-number,
+    .stat-mini-number {
+        font-size: 1.8rem;
+    }
+    
+    .stat-text,
+    .stat-mini-text {
+        font-size: 0.8rem;
+    }
+    
+    .about-section,
+    .advantages-section {
+        padding: 20px 15px;
+    }
+    
+    .about-content p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+    
+    .social-links a {
+        font-size: 1.3rem;
+    }
+}
