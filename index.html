@@ -4,44 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - Главная</title>
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center py-3">
-                <div class="fs-3 fw-bold text-primary">🛒 TechStore</div>
+            <div class="header-inner">
+                <div class="logo">🛒 TechStore</div>
                 <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-                        <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
                     </ul>
                 </nav>
-                <div>
-                    <button class="btn btn-outline-secondary btn-sm">🔍</button>
-                    <button class="btn btn-outline-secondary btn-sm">🛒</button>
+                <div class="header-actions">
+                    <button>🔍</button>
+                    <button>🛒</button>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <h1 class="text-center my-5">TechStore</h1>
-            <p class="text-center lead">Лучшая электроника по доступным ценам</p>
-        </div>
+        <section class="hero">
+            <div class="container">
+                <h1>Добро пожаловать в TechStore</h1>
+                <p>Лучшая электроника по доступным ценам</p>
+                <a href="catalog.html" class="btn">Посмотреть каталог</a>
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="container">
+                <h2>Популярные товары</h2>
+                <div class="popular-grid">
+                    <div class="product-card">
+                        <div class="product-image">🎧</div>
+                        <h3>Наушники Sony</h3>
+                        <p class="price">24 990₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">📱</div>
+                        <h3>iPhone 17</h3>
+                        <p class="price">109 990₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">💻</div>
+                        <h3>MacBook Pro</h3>
+                        <p class="price">189 990₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="catalog.html" class="btn btn-outline">Смотреть все товары</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🚚</div>
+                        <h3>Бесплатная доставка</h3>
+                        <p>При заказе от 10 000 ₽</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Безопасная оплата</h3>
+                        <p>Защита платежей</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✅</div>
+                        <h3>Гарантия качества</h3>
+                        <p>1 год гарантии</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📞</div>
+                        <h3>Поддержка 24/7</h3>
+                        <p>Всегда на связи</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-wn6IDeQp0pxW6l6zO/a1p6DZ4uJ/4bY3D4Qp6F1kYF4ZJ5nX5gF0lG8t9w6jF5k" 
-        crossorigin="anonymous">
-    </script>
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>© 2026 TechStore. Все права защищены.</p>
+                <p>Email: info@techstore.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">📱</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

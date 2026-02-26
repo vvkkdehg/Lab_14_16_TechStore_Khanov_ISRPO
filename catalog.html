@@ -4,28 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - Каталог</title>
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center py-3">
-                <div class="fs-3 fw-bold text-primary">🛒 TechStore</div>
+            <div class="header-inner">
+                <div class="logo">🛒 TechStore</div>
                 <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-                        <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
                     </ul>
                 </nav>
                 <div>
-                    <button class="btn btn-outline-secondary btn-sm">🔍</button>
-                    <button class="btn btn-outline-secondary btn-sm">🛒</button>
+                    <button>🔍</button>
+                    <button>🛒</button>
                 </div>
             </div>
         </div>
@@ -33,14 +28,159 @@
 
     <main>
         <div class="container">
-            <h1 class="text-center my-5">Каталог товаров</h1>
+            <h1>Каталог товаров</h1>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="badge">-20%</div>
+                    <div class="product-image">🎧</div>
+                    <h3>Беспроводные наушники Sony WH-1000XM5</h3>
+                    <p class="description">Премиальные наушники с активным шумоподавлением и временем работы до 30 часов</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(125)</span>
+                    </div>
+                    <div class="price">
+                        <span class="old">29 990₽</span>
+                        <span class="current">24 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge new">НОВИНКА</div>
+                    <div class="product-image">📱</div>
+                    <h3>Смартфон iPhone 17 Pro Max</h3>
+                    <p class="description">Флагманский смартфон с титановым корпусом и чипом А19 Pro</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(242)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">109 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">💻</div>
+                    <h3>Ноутбук MacBook Pro 14" M5</h3>
+                    <p class="description">Профессиональный ноутбук для работы и творчества с процессором M5 Pro</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(69)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">189 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">-18%</div>
+                    <div class="product-image">⌚</div>
+                    <h3>Умные часы Apple Watch Series 10</h3>
+                    <p class="description">Умные часы с датчиками здоровья и фитнес-трекером</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="count">(267)</span>
+                    </div>
+                    <div class="price">
+                        <span class="old">44 990₽</span>
+                        <span class="current">38 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">📱</div>
+                    <h3>Планшет iPad Pro 12.9" M2</h3>
+                    <p class="description">Мощный планшет для профессиональной работы и развлечений</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(156)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">99 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎮</div>
+                    <h3>Игровая консоль PlayStation 5 Pro</h3>
+                    <p class="description">Игровая консоль нового поколения с SSD и 4K-графикой</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(543)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">54 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">-15%</div>
+                    <div class="product-image">🔊</div>
+                    <h3>Беспроводная колонка JBL Charge 5</h3>
+                    <p class="description">Мощная портативная колонка с защитой от воды и 20 часами работы</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="count">(98)</span>
+                    </div>
+                    <div class="price">
+                        <span class="old">12 990₽</span>
+                        <span class="current">9 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge new">ХИТ</div>
+                    <div class="product-image">📷</div>
+                    <h3>Экшн-камера GoPro Hero 12</h3>
+                    <p class="description">Компактная камера для съемки в экстремальных условиях с 5.3K видео</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(312)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">29 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">📚</div>
+                    <h3>Электронная книга Kindle Paperwhite</h3>
+                    <p class="description">Водозащищенная электронная книга с подсветкой и высоким разрешением</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="count">(87)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">14 990₽</span>
+                    </div>
+                    <button class="btn">В корзину</button>
+                </div>
+            </div>
         </div>
     </main>
 
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-wn6IDeQp0pxW6l6zO/a1p6DZ4uJ/4bY3D4Qp6F1kYF4ZJ5nX5gF0lG8t9w6jF5k" 
-        crossorigin="anonymous">
-    </script>
+    <footer>
+        <div class="container">
+            <div>
+                <p>© 2026 TechStore. Все права защищены.</p>
+                <p>Email: info@techstore.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+            <div>
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">📱</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
