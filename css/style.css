@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1820px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -80,7 +80,7 @@ header button:hover {
   padding: 80px 0;
   text-align: center;
   margin: 20px auto;
-  max-width: 1820px;
+  max-width: 1200px;
   border-radius: 10px;
   width: 100%;
 }
@@ -496,4 +496,61 @@ header button:hover {
 .text-center {
   text-align: center;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .products-grid,
+    .popular-grid,
+    .team-grid,
+    .advantages-grid,
+    .features-grid,
+    .stats-grid,
+    .stats-mini-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .container h2 {
+        padding-top: 60px;
+        font-size: 2rem;
+    }
+    
+    .about-section,
+    .advantages-section {
+        padding: 30px 20px;
+    }
+    
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
 }
